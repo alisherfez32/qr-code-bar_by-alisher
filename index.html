@@ -14,60 +14,82 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    body {
-      background: rgb(234, 219, 237);
-     margin: auto;
-     padding-left: 420px;
-     width: 1440px;
-     box-sizing: border-box;
-     font-family: 'Inter';
-     
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    img {
-      width: 200px;
-      margin-top: 10px; 
-      margin-left: 5px; 
-      margin-right: 5px;
-      border-radius: 10px; 
+
+    html {
+      font-family: "Outfit", sans-serif;
+      font-size: 17px;
+      text-align: center;
     }
-    .container {
-      border: 3px solid Light hsl(212, 45%, 89%);
-      background: white; 
-      display: inline-flex; 
+
+    body, 
+    main {
+      display: flex;
       flex-direction: column;
       justify-content: center;
-      border-radius: 15px; 
       align-items: center;
-      width: 225px;
-      margin: 250px;
-      box-shadow: 0px 8px 10px hsl(210, 3%, 76%);
     }
 
-    .text {
-      text-align: center;
-      padding: 15px;
-      
+    body {
+      height: 100vh;
+      background-color: hsl(212, 45%, 89%);
     }
+
+    img {
+      border-radius: 10px;
+      width: 100%;
+    }
+
+    main {
+      background: white;
+      padding: 20px;
+      border-radius: 20px;
+    }
+
+    h1 {
+      margin: 25px 0;
+    }
+
     p {
-      font-size: 15px;
-      font-weight: 300;
-    }
+  color: hsl(220, 15%, 55%);
+  margin: 0 0 13px 0;
+  padding: 0 15px;
+}
 
-    h3 {
-      font-size: 16px;
-      font-weight: 900;
-    }
+@media (max-width: 768px) {
+  main {
+    width: 340px;
+  }
+  h1 {
+    font-size: 26px;
+  }
+}
+@media (min-width: 768px) {
+  main {
+    width: 450px;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  p {
+    font-size: 22px;
+  }
+}
+
   </style>
 </head>
 <body>
-  <div class="container">
+  <main>
   <img src="./images/image-qr-code.png" alt="">
-  <div class="text">
-    <h3>Improve your front-end skills by building projects</h3>
+    <h1>Improve your front-end skills by building projects</h1>
       <p>Scan the Qr code to visit Frontend Mentor and take your coding 
         skills to the next level
       </p>
-  </div>
-</div>
+  </main>
 </body>
 </html>
